@@ -1,4 +1,4 @@
 body{
-    background-image: url("app/assets/images/background/bg.png");
+    background-image: url(app/assets/images/background/bg.png);
     background-color: #262626;
 }
