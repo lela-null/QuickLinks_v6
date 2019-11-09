@@ -1,0 +1,55 @@
+<!-- this is version 6 of QuickLinks -->
+<!-- code on 2019.11.09 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- set encode and icon -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="app/assets/images/favicon.png" />
+<!-- load js lib -->
+    <script src="app/assets/libraries/_jQuery_v3.4.1.js"></script>
+    <script src="app/assets/libraries/_React_v16.11.0.js"></script>
+<!-- load js -->
+    <script src="app/assets/libraries/lib_scripts.js"></script>
+    <script src="app/assets/libraries/scripts.js"></script>
+<!-- load css -->
+    <link rel="stylesheet" type="text/css" href="app/assets/libraries/lib_styles.css">
+    <link rel="stylesheet" type="text/css" href="app/assets/libraries/styles.css">
+
+    <title>QuickLinks_v6</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="console">
+            <div id="console_controls">
+                <input id="clear_control" type="button" value="Clear Console" onclick="clear()"/>
+                <a href="data/changelog.txt" target="_blank"><input id="changelog" type="button" value="⚑"/></a>
+            </div>
+            <div id="console_box">
+                <p id="post">
+                    QuickLinks v6.0.0
+                </p>
+            </div>
+            <img id="picture" src="" />
+            <p class="center_text" id="quote"></p>
+        </div>
+        <div id="tiles">
+
+<!-- context menu -->
+    <div id="contextmenu" hidden>
+        <p id="menu-title">Context Menu</p>
+        <hr>
+        <ul>
+            <li id="remove">Remove Icon (temp)</li>
+            <li id="login-1"></li>
+            <li id="login-2"></li>
+            <li id="login-3"></li>
+            <li><a id="site-link" href="#" target="_blank">Go To Site</a></li>
+            <li id="cancel" onclick="cancel()">Cancel</li>
+        </ul>
+    </div>
+</body>
+
+</html>
