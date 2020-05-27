@@ -31,8 +31,6 @@ ECHO What is the USERNAME or EMAIL?
 ECHO (If none, leave blank.)
 SET /p username=
 
-
-
 ECHO ----------------------
 COLOR 0A
 :password
@@ -72,7 +70,8 @@ IF NOT %accept%==y GOTO start
 IF NOT EXIST %item% mkdir %item%
 CD %item%
 
-echo %username% > username.txt
-echo %password% > password.txt
-echo %website% > website.txt
-echo %extra% > extra.txt
+ECHO %username% > username.txt
+ECHO %password% > password.txt
+ECHO %website% > website.txt
+ECHO %extra% > extra.txt
+XCOPY /y "../assets/temp.png" "%item%/icon.png"
